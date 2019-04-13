@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="employee" class="Com.BridgeIt.Model.Employee" autowire="byName">
+</bean>
+<bean id="address" class="Com.BridgeIt.Model.Address">
+<property name="fullAddress" value="block A 888,mumbai"></property>
+</bean>
+
+<bean id="developer" class="Com.BridgeIt.Model.Developer" autowire="constructor"></bean>
+<bean  id ="language" class="Com.BridgeIt.Model.Language">
+<property name="name" value="Java AND PYTHON"></property>
+</bean>
+<bean id="person" class="Com.BridgeIt.Model.Person" autowire="byType"/>
+<bean id ="invisible"  class="Com.BridgeIt.Model.Ability">
+<property name="skill" value="Invisblity"></property>
+
+</bean>
+
+</beans>

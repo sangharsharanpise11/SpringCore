@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="employee" class="model.Employee" autowire="byName">
+</bean>
+<bean id="address" class="model.Address">
+<property name="fullAddress" value="block A 888,mumbai"></property>
+</bean>
+
+<bean id="developer" class="model.Developer" autowire="constructor"></bean>
+<bean  id ="language" class="model.Language">
+<property name="name" value="Java AND PYTHON"></property>
+</bean>
+
+</beans>
+
+

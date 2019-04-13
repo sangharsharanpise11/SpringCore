@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<context:annotation-config/>
+
+<bean id ="student" class="Com.BridgeIt.Model.Student">
+<property name="name" value="rohan"/></bean>
+
+<bean id="customer" class="Com.BridgeIt.Model.Customer">
+<property name="action" value="buy"/>
+<property name="type" value="1"/>
+</bean> 
+<bean id="PersonBean" class="Com.BridgeIt.Model.Person">
+<property name="name" value="rohan"/>
+<property name="address" value="Block 07,mumbai-1"/>
+<property name="age" value="29"/>
+</bean>
+
+<bean id="profile" class="Com.BridgeIt.Model.Profile"/>
+<bean id="student1" class="Com.BridgeIt.Model.Students">
+<property name="name" value="rohan"/>
+<property name="age" value="11"/>
+</bean>
+<bean id="student2" class="Com.BridgeIt.Model.Students">
+<property name="name" value="nuha"/>
+<property name="age" value="17"/>
+</bean>
+</beans>
